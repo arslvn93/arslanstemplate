@@ -56,7 +56,7 @@ import Projects1 from "@/components/homes/home-1/Projects";
 import Properties1 from "@/components/homes/home-1/Properties";
 
 // ----------------------------
-// Home 2 Imports (renamed to avoid collisions)
+// Home 2 Imports
 // ----------------------------
 import Footer1 from "@/components/footers/Footer1";
 import Header2 from "@/components/headers/Header2";
@@ -72,6 +72,23 @@ import Home2Facts from "@/components/homes/home-2/Facts";
 import Home2Properties from "@/components/homes/home-2/Properties";
 import Home2Testimonials from "@/components/homes/home-2/Testimonials";
 
+// ----------------------------
+// Home 3 Imports
+// ----------------------------
+import Footer3 from "@/components/footers/Footer3";
+import Header3 from "@/components/headers/Header3";
+import Home3Hero from "@/components/homes/home-3/Hero";
+import Home3About from "@/components/homes/home-3/About";
+import Home3Agents from "@/components/homes/home-3/Agents";
+import Home3Banner from "@/components/homes/home-3/Banner";
+import Home3Blogs from "@/components/homes/home-3/Blogs";
+import Home3Brands from "@/components/homes/home-3/Brands";
+import Home3Categories from "@/components/homes/home-3/Categories";
+import Home3Cities from "@/components/homes/home-3/Cities";
+import Home3Facts from "@/components/homes/home-3/Facts";
+import Home3Properties from "@/components/homes/home-3/Properties";
+import Home3Testimonials from "@/components/homes/home-3/Testimonials";
+
 export const metadata = {
   title: "Combined Real Estate Website",
   description: "Combined Real Estate Website with all home sections",
@@ -82,7 +99,6 @@ export default function HomePage() {
     <>
       <ThemeController themeColor="default-dark" />
       <div id="wrapper" className="bg-body-1 counter-scroll">
-        
         {/* ---------------------------- */}
         {/* Home 6 Section */}
         {/* ---------------------------- */}
@@ -155,6 +171,25 @@ export default function HomePage() {
           <Home2Blogs />
         </div>
         <Footer1 logo="/images/logo/logo-3@2x.png" />
+
+        {/* ---------------------------- */}
+        {/* Home 3 Section */}
+        {/* ---------------------------- */}
+        <Header3 />
+        <Home3Hero />
+        <div className="main-content">
+          <Home3Categories />
+          <Home3About />
+          <Home3Properties />
+          <Home3Facts />
+          <Home3Agents />
+          <Home3Cities />
+          <Home3Testimonials />
+          <Home3Banner />
+          <Home3Brands />
+          <Home3Blogs />
+        </div>
+        <Footer3 />
 
         {/* ---------------------------- */}
         {/* Global Footer */}
