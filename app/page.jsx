@@ -88,6 +88,22 @@ import Home8Services from "@/components/homes/home-8/Services";
 import Home8Testimonials from "@/components/homes/home-8/Testimonials";
 import Home8WelcomeSection from "@/components/homes/home-8/WelcomeSection";
 
+// ----------------------------
+// Home 9 Imports
+// ----------------------------
+import Header9 from "@/components/headers/Header9";
+import Home9About from "@/components/homes/home-9/About";
+import Home9Agents from "@/components/homes/home-9/Agents";
+import Home9Blogs from "@/components/homes/home-9/Blogs";
+import Home9Brands from "@/components/homes/home-9/Brands";
+import Home9Facts from "@/components/homes/home-9/Facts";
+import Home9Features from "@/components/homes/home-9/Features";
+import Home9Hero from "@/components/homes/home-9/Hero";
+import Home9Properties from "@/components/homes/home-9/Properties";
+import Home9Services from "@/components/homes/home-9/Services";
+import Home9Services2 from "@/components/homes/home-9/Services2";
+import Home9Testimonials from "@/components/homes/home-9/Testimonials";
+
 export const metadata = {
   title: "Combined Real Estate Website",
   description: "Combined Real Estate Website with all home sections",
@@ -187,6 +203,27 @@ export default function HomePage() {
           <Home8Services />
           <Home8Agents />
           <Home8Blogs />
+        </div>
+        <Footer2 parentClass="style-2" />
+
+        {/* ---------------------------- */}
+        {/* Home 9 Section */}
+        {/* ---------------------------- */}
+        <Header9 />
+        <div className="bg-body-1 wrap-top">
+          <Home9Hero />
+        </div>
+        <div className="main-content">
+          <Home9Facts />
+          <Home9About />
+          <Home9Services />
+          <Home9Properties />
+          <Home9Features />
+          <Home9Agents />
+          <Home9Services2 />
+          <Home9Testimonials />
+          <Home9Brands />
+          <Home9Blogs />
         </div>
         <Footer2 parentClass="style-2" />
 
