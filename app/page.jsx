@@ -20,16 +20,12 @@ import Contact from "@/components/homes/home-6/Contact";
 // ----------------------------
 import HighlightSection from "@/components/homes/home-7/HighlightSection";
 import HelpCenter from "@/components/homes/home-7/HelpCenter";
-import PropertyGallery from "@/components/homes/home-7/PropertyGallery";
 import Contact7 from "@/components/homes/home-7/Contact";
 
 // ----------------------------
 // Home 10
 // ----------------------------
 import Brands from "@/components/homes/home-10/Brands";
-import Properties from "@/components/homes/home-10/Properties";
-import Properties2 from "@/components/homes/home-10/Properties2";
-import Properties3 from "@/components/homes/home-10/Properties3";
 import HelpSection from "@/components/homes/home-10/HelpSection";
 
 // ----------------------------
@@ -47,14 +43,11 @@ import Contact1 from "@/components/homes/home-1/Contact";
 import Cta1 from "@/components/homes/home-1/Cta";
 import DownloadApp1 from "@/components/homes/home-1/DownloadApp";
 import Facts1 from "@/components/homes/home-1/Facts";
-import Featured1 from "@/components/homes/home-1/Featured";
-import FeaturedProperty1 from "@/components/homes/home-1/FeaturedProperty";
 import Features1 from "@/components/homes/home-1/Features";
 import HelpCenter1 from "@/components/homes/home-1/HelpCenter";
 import HelpSection1 from "@/components/homes/home-1/HelpSection";
 import LoanCalculator1 from "@/components/homes/home-1/LoanCalculator";
 import Projects1 from "@/components/homes/home-1/Projects";
-import Properties1 from "@/components/homes/home-1/Properties";
 
 export const metadata = {
   title: "My Real Estate Website",
@@ -86,17 +79,9 @@ export default function HomePage() {
           {/* -- Projects (Home 6) -- */}
           <Projects />
 
-          {/* -- Properties (Home 10) -- */}
-          <Properties />
-          <Properties2 />
-          <Properties3 />
-
           {/* -- Help/FAQ (Home 7 & Home 10) -- */}
           <HelpCenter />
           <HelpSection />
-
-          {/* -- Property Gallery (Home 7) -- */}
-          <PropertyGallery />
 
           {/* -- Team (Home 6) -- */}
           <Team />
@@ -112,17 +97,12 @@ export default function HomePage() {
 
           {/* ---------------------------------- */}
           {/* Home 1 Sections                    */}
-          {/* Uncomment / remove as needed       */}
           {/* ---------------------------------- */}
-          
           <Hero1 />
           <Banner1 />
           <About1 />
           <Agents1 />
           <Facts1 />
-          <Featured1 />
-          <FeaturedProperty1 />
-          <Properties1 />
           <Cities1 />
           <Categories1 />
           <Features1 />
@@ -141,9 +121,8 @@ export default function HomePage() {
           {/* ---------------------------------- */}
           <Contact />
           <Contact7 />
-
         </div>
-        
+
         {/* Footer */}
         <Footer2 />
       </div>
