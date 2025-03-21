@@ -1,35 +1,38 @@
 import React from "react";
 import ThemeController from "@/components/common/ThemeController";
+
+// ----------------------------
+// Home 6 Imports
+// ----------------------------
 import Footer2 from "@/components/footers/Footer2";
 import Header6 from "@/components/headers/Header6";
-
-// ----------------------------
-// Home 6
-// ----------------------------
 import Hero6 from "@/components/homes/home-6/Hero";
-import About from "@/components/homes/home-6/About";
-import Services from "@/components/homes/home-6/Services";
-import Projects from "@/components/homes/home-6/Projects";
-import Team from "@/components/homes/home-6/Team";
-import Testimonials from "@/components/homes/home-6/Testimonials";
-import Blogs from "@/components/homes/home-6/Blogs";
-import Contact from "@/components/homes/home-6/Contact";
+import About6 from "@/components/homes/home-6/About";
+import Services6 from "@/components/homes/home-6/Services";
+import Projects6 from "@/components/homes/home-6/Projects";
+import Team6 from "@/components/homes/home-6/Team";
+import Testimonials6 from "@/components/homes/home-6/Testimonials";
+import Blogs6 from "@/components/homes/home-6/Blogs";
+import Contact6 from "@/components/homes/home-6/Contact";
 
 // ----------------------------
-// Home 7
+// Home 7 Imports
 // ----------------------------
 import HighlightSection from "@/components/homes/home-7/HighlightSection";
 import HelpCenter from "@/components/homes/home-7/HelpCenter";
 import Contact7 from "@/components/homes/home-7/Contact";
 
 // ----------------------------
-// Home 10
+// Home 10 Imports
 // ----------------------------
-import Brands from "@/components/homes/home-10/Brands";
-import HelpSection from "@/components/homes/home-10/HelpSection";
+import Brands10 from "@/components/homes/home-10/Brands";
+import Properties10 from "@/components/homes/home-10/Properties";
+import Properties2_10 from "@/components/homes/home-10/Properties2";
+import Properties3_10 from "@/components/homes/home-10/Properties3";
+import HelpSection10 from "@/components/homes/home-10/HelpSection";
 
 // ----------------------------
-// Home 1 (renamed imports to avoid collisions)
+// Home 1 Imports
 // ----------------------------
 import Hero1 from "@/components/homes/home-1/Hero";
 import About1 from "@/components/homes/home-1/About";
@@ -43,15 +46,35 @@ import Contact1 from "@/components/homes/home-1/Contact";
 import Cta1 from "@/components/homes/home-1/Cta";
 import DownloadApp1 from "@/components/homes/home-1/DownloadApp";
 import Facts1 from "@/components/homes/home-1/Facts";
+import Featured1 from "@/components/homes/home-1/Featured";
+import FeaturedProperty1 from "@/components/homes/home-1/FeaturedProperty";
 import Features1 from "@/components/homes/home-1/Features";
 import HelpCenter1 from "@/components/homes/home-1/HelpCenter";
 import HelpSection1 from "@/components/homes/home-1/HelpSection";
 import LoanCalculator1 from "@/components/homes/home-1/LoanCalculator";
 import Projects1 from "@/components/homes/home-1/Projects";
+import Properties1 from "@/components/homes/home-1/Properties";
+
+// ----------------------------
+// Home 2 Imports (renamed to avoid collisions)
+// ----------------------------
+import Footer1 from "@/components/footers/Footer1";
+import Header2 from "@/components/headers/Header2";
+import Home2Hero from "@/components/homes/home-2/Hero";
+import Home2About from "@/components/homes/home-2/About";
+import Home2Agents from "@/components/homes/home-2/Agents";
+import Home2Banner from "@/components/homes/home-2/Banner";
+import Home2Blogs from "@/components/homes/home-2/Blogs";
+import Home2Brands from "@/components/homes/home-2/Brands";
+import Home2Categories from "@/components/homes/home-2/Categories";
+import Home2Cities from "@/components/homes/home-2/Cities";
+import Home2Facts from "@/components/homes/home-2/Facts";
+import Home2Properties from "@/components/homes/home-2/Properties";
+import Home2Testimonials from "@/components/homes/home-2/Testimonials";
 
 export const metadata = {
-  title: "My Real Estate Website",
-  description: "Custom Real Estate Website",
+  title: "Combined Real Estate Website",
+  description: "Combined Real Estate Website with all home sections",
 };
 
 export default function HomePage() {
@@ -59,71 +82,83 @@ export default function HomePage() {
     <>
       <ThemeController themeColor="default-dark" />
       <div id="wrapper" className="bg-body-1 counter-scroll">
-
-        {/* Header (Home 6) */}
+        
+        {/* ---------------------------- */}
+        {/* Home 6 Section */}
+        {/* ---------------------------- */}
         <Header6 />
-
-        {/* -- Hero (Home 6) -- */}
         <Hero6 />
-
         <div className="main-content">
-          {/* -- About (Home 6) -- */}
-          <About />
-
-          {/* -- Highlight section (Home 7) -- */}
-          <HighlightSection />
-
-          {/* -- Services (Home 6) -- */}
-          <Services />
-
-          {/* -- Projects (Home 6) -- */}
-          <Projects />
-
-          {/* -- Help/FAQ (Home 7 & Home 10) -- */}
-          <HelpCenter />
-          <HelpSection />
-
-          {/* -- Team (Home 6) -- */}
-          <Team />
-
-          {/* -- Testimonials (Home 6) -- */}
-          <Testimonials />
-
-          {/* -- Brands (Home 10) -- */}
-          <Brands />
-
-          {/* -- Blogs (Home 6) -- */}
-          <Blogs />
-
-          {/* ---------------------------------- */}
-          {/* Home 1 Sections                    */}
-          {/* ---------------------------------- */}
-          <Hero1 />
-          <Banner1 />
-          <About1 />
-          <Agents1 />
-          <Facts1 />
-          <Cities1 />
-          <Categories1 />
-          <Features1 />
-          <HelpCenter1 />
-          <HelpSection1 />
-          <DownloadApp1 />
-          <LoanCalculator1 />
-          <Projects1 />
-          <Blogs1 />
-          <Brands1 />
-          <Cta1 />
-          <Contact1 />
-
-          {/* ---------------------------------- */}
-          {/* Contacts from Home 6 and Home 7    */}
-          {/* ---------------------------------- */}
-          <Contact />
-          <Contact7 />
+          <About6 />
+          <Services6 />
+          <Projects6 />
+          <Team6 />
+          <Testimonials6 />
+          <Blogs6 />
+          <Contact6 />
         </div>
 
-        {/* Footer */}
+        {/* ---------------------------- */}
+        {/* Home 7 Section */}
+        {/* ---------------------------- */}
+        <HighlightSection />
+        <HelpCenter />
+        <Contact7 />
+
+        {/* ---------------------------- */}
+        {/* Home 10 Section */}
+        {/* ---------------------------- */}
+        <Brands10 />
+        <Properties10 />
+        <Properties2_10 />
+        <Properties3_10 />
+        <HelpSection10 />
+
+        {/* ---------------------------- */}
+        {/* Home 1 Section */}
+        {/* ---------------------------- */}
+        <Hero1 />
+        <Banner1 />
+        <About1 />
+        <Agents1 />
+        <Facts1 />
+        <Featured1 />
+        <FeaturedProperty1 />
+        <Cities1 />
+        <Categories1 />
+        <Features1 />
+        <HelpCenter1 />
+        <HelpSection1 />
+        <DownloadApp1 />
+        <LoanCalculator1 />
+        <Projects1 />
+        <Blogs1 />
+        <Brands1 />
+        <Cta1 />
+        <Contact1 />
+
+        {/* ---------------------------- */}
+        {/* Home 2 Section */}
+        {/* ---------------------------- */}
+        <Header2 />
+        <Home2Hero />
+        <div className="main-content">
+          <Home2Categories />
+          <Home2About />
+          <Home2Properties />
+          <Home2Facts />
+          <Home2Agents />
+          <Home2Cities />
+          <Home2Testimonials />
+          <Home2Banner />
+          <Home2Brands />
+          <Home2Blogs />
+        </div>
+        <Footer1 logo="/images/logo/logo-3@2x.png" />
+
+        {/* ---------------------------- */}
+        {/* Global Footer */}
+        {/* ---------------------------- */}
         <Footer2 />
       </div>
     </>
