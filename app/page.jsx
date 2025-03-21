@@ -73,21 +73,20 @@ import Home2Properties from "@/components/homes/home-2/Properties";
 import Home2Testimonials from "@/components/homes/home-2/Testimonials";
 
 // ----------------------------
-// Home 3 Imports
+// Home 8 Imports
 // ----------------------------
-import Footer3 from "@/components/footers/Footer3";
-import Header3 from "@/components/headers/Header3";
-import Home3Hero from "@/components/homes/home-3/Hero";
-import Home3About from "@/components/homes/home-3/About";
-import Home3Agents from "@/components/homes/home-3/Agents";
-import Home3Banner from "@/components/homes/home-3/Banner";
-import Home3Blogs from "@/components/homes/home-3/Blogs";
-import Home3Brands from "@/components/homes/home-3/Brands";
-import Home3Categories from "@/components/homes/home-3/Categories";
-import Home3Cities from "@/components/homes/home-3/Cities";
-import Home3Facts from "@/components/homes/home-3/Facts";
-import Home3Properties from "@/components/homes/home-3/Properties";
-import Home3Testimonials from "@/components/homes/home-3/Testimonials";
+import Header8 from "@/components/headers/Header8";
+import Home8Agents from "@/components/homes/home-8/Agents";
+import Home8Banner from "@/components/homes/home-8/Banner";
+import Home8Blogs from "@/components/homes/home-8/Blogs";
+import Home8Brands from "@/components/homes/home-8/Brands";
+import Home8Facts from "@/components/homes/home-8/Facts";
+import Home8FeaturedProperty from "@/components/homes/home-8/FeaturedProperty";
+import Home8Hero from "@/components/homes/home-8/Hero";
+import Home8Properties from "@/components/homes/home-8/Properties";
+import Home8Services from "@/components/homes/home-8/Services";
+import Home8Testimonials from "@/components/homes/home-8/Testimonials";
+import Home8WelcomeSection from "@/components/homes/home-8/WelcomeSection";
 
 export const metadata = {
   title: "Combined Real Estate Website",
@@ -173,23 +172,23 @@ export default function HomePage() {
         <Footer1 logo="/images/logo/logo-3@2x.png" />
 
         {/* ---------------------------- */}
-        {/* Home 3 Section */}
+        {/* Home 8 Section */}
         {/* ---------------------------- */}
-        <Header3 />
-        <Home3Hero />
-        <div className="main-content">
-          <Home3Categories />
-          <Home3About />
-          <Home3Properties />
-          <Home3Facts />
-          <Home3Agents />
-          <Home3Cities />
-          <Home3Testimonials />
-          <Home3Banner />
-          <Home3Brands />
-          <Home3Blogs />
+        <Header8 />
+        <Home8Hero />
+        <div className="main-content bg-color-white">
+          <Home8Facts />
+          <Home8WelcomeSection />
+          <Home8FeaturedProperty />
+          <Home8Brands />
+          <Home8Properties />
+          <Home8Banner />
+          <Home8Testimonials />
+          <Home8Services />
+          <Home8Agents />
+          <Home8Blogs />
         </div>
-        <Footer3 />
+        <Footer2 parentClass="style-2" />
 
         {/* ---------------------------- */}
         {/* Global Footer */}
